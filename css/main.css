@@ -17,7 +17,7 @@ html {
 }
 
 body {
-  margin: 0;
+  text-align: center;
 }
 
 img {
@@ -27,4 +27,60 @@ img {
 
 body img:nth-child(even) {
   display: none;
+}
+
+@media only screen and (min-width: 25em) {
+
+  img {
+    width: 49%;
+  }
+
+  body img:nth-child(even) {
+    display: inline-block;
+  }
+}
+
+@media only screen and (min-width: 38em) {
+
+  img {
+    width: 32%;
+  }
+
+  body img:nth-child(even) {
+    display: inline-block;
+  }
+
+  body img:first-child {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 60em) {
+
+  img {
+    width: 24%;
+  }
+
+  body img:nth-child(even) {
+    display: inline-block;
+  }
+
+  body img:first-child {
+    display: inline-block;
+  }
+}
+
+@media only screen and (min-width: 90em) {
+
+  img {
+    width: 24%;
+  }
+
+  body img:nth-child(even) {
+    display: inline-block;
+  }
+
+  body img:first-child {
+    display: inline-block;
+  }
 }
